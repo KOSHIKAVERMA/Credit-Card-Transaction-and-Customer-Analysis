@@ -113,9 +113,21 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 ● **Cust_Satisfaction_Score** : The satisfaction score provided by the Customer for the service.
 
+<br>
 
+### DATA MODIFICATION
 
+Before starting the analysis and visualization, I created **additional columns** and **measures** to streamline certain processes. I utilized Power BI's built-in **DAX** tool to develop these enhancements.
 
+#### Added Columns
+
+**1. Revenue**
+
+hdashjhsiahhddddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsjahfusancjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjhuiashkaaaaaaa
+
+``` powerbi
+Revenue = credit_card[Annual_Fees] + credit_card[Total_Trans_Amt] + credit_card[Interest_Earned]
+```
 
 
 
