@@ -1,4 +1,5 @@
 # Unlocking Insights: Credit Card Transactions and Customer Behavior Analysis
+<br>
 
 ### PROJECT OVERVIEW
 
@@ -13,97 +14,108 @@ In this project, I uncovered key insights and behavioral patterns in credit card
 - [Dashboard Preparation](#dashboard-preparation)
 - [Insights](#insights)
 - [Conclusion](#Conclusion)
-  
+
+  <br>
 
 ### PROBLEM STATEMENT
 
-In this project I have done analysis of a fictional company that provides Credit Card services to the public. The company wants to better understand their business and customer usage trends for all **4 quarters** of the financial year **2022-2023** to streamline and focus on the aspects that needs their most attention. 
-
+In this project, I analyzed data from a fictional credit card company aiming to understand business performance and customer usage patterns across all **four quarters** of the **2023** financial year. The goal was to identify key trends and highlight areas requiring the most attention to optimize their operations effectively. 
 
 ### DATA COLLECTION
 
-The dataset used for this analysis is a structured data in CSV format. The Two data Tables are **Transaction Dataset** which contains **10,108 rows** and **18 columns** and has data of all the transactions that the customer placed, a quick look of the data:
+The dataset used for this analysis is structured in CSV format and consists of two parts. The first is the **Transaction Dataset**, containing **10,108 rows** and **18 columns**, detailing all customer transactions. Here's a quick glimpse of its contents:
+
+<br>
+
+![Screenshot 2024-10-14 164247](https://github.com/user-attachments/assets/667edfe3-ee42-4427-b01c-8ef4ac904e05)
+
+<br>
+
+**Column Description** :
+
+● **client_Num** : It is the Customer’s transaction number.
+
+● **card_Category** : The type of card that the customer used.
+
+● **Annual_Fees** : The fees that the customer paid for the card annually.
+
+● **Activation_30_Days** : It is the binary indication of whether the customer activated their card within 30 days or not.
+
+● **Customer_Acq_Cost** : The cost incurred to acquire the customer.
+
+● **Week_Start_Date** : It is the date of the first day of each week of the year.
+
+● **Week_Num** : It is the rolling count of the number of weeks.
+
+● **Qtr** : It indicates the quarter of the year.
+
+● **current_year** : It is the operation year.
+
+● **Credit_Limit** : The credit limit assigned to the customer’s card.
+
+● **Total_Revolving_Bal** : The outstanding balance that rolls over from one month to the next.
+
+● **Total_Trans_Amt** : Total amount spent by the customer through their card transactions.
+
+● **Total_Trans_Vol** : Total number of transactions made by the customer using their card.
+
+● **Avg_Utilization_Ratio** : The proportion of revolving credit used relative to the customer’s total available credit.
+
+● **Use_Chip** : The type of payment method the customer used with their card.
+
+● **Exp_Type** : The types of bills the customer paid using their card.
+
+● **Interest_Earned** : The amount of interest the company earned from the customer’s card usage.
+
+● **Delinquent_Acc** : A binary indicator that flags an account if a payment remains overdue for 30 days or more.
+
+
+ <br> 
+ <br> 
+
+The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **15 columns**, containing information on customer demographics, occupations, geographical locations, and other relevant attributes. 
+
+<br>
+
+![Screenshot 2024-10-14 164126](https://github.com/user-attachments/assets/03f9d3f8-7e4b-432d-9ba1-128229c6ceef)
+
+<br>
+
+**Column Description** :
+
+● **Client_Num** : It is the customer’s transaction number.
+
+● **Customer_Age** : Customer’s age.
+
+● **Gender** : Customer’s gender.
+
+● **Dependent_Count** : The number of individuals financially supported by the customer through their card.
+
+● **Education_Level** : The highest level of education that the customer has received.
+
+● **Marital_Status** : Customer’s marital status.
+
+● **state_cd** : Short code of the state that the customer resides in.
+
+● **Zipcode** : The zip code of the place that the customer resides in.
+
+● **Car_Owner** : It indicates whether the customer owns a car or not.
+
+● **House_Owner** : It indicates whether the customer owns a house or not.
+
+● **Personal_loan** : It indicates whether the customer has a personal loan or not.
+
+● **contact** : The type of contact that the customer has provided.
+
+● **Customer_Job** : The job that customer has.
+
+● **Income** : The amount of income the customer earns.
+
+● **Cust_Satisfaction_Score** : The satisfaction score provided by the Customer for the service.
 
 
 
 
-
-Column Description :
-
-● client_Num : It is the client’s transaction number.
-● card_Category : It is the type of card that the client used.
-
-● Annual_Fees : It is the fees that the client paid for the card annually.
-
-● Activation_30_Days : It is the binary indication of whether the client activated their card within 30 days or not.
-
-● Customer_Acq_Cost : It is the amunt that went towards acquiring the client.
-
-● Week_Start_Date : It is the date of the first day of each week of the year.
-
-● Week_Num : It is the rolling count of the number of weeks.
-
-● Qtr : It indicates the quarter of the year.
-
-● current_year : It is the operation year.
-
-● Credit_Limit : It is the amount limit of the client’s card.
-
-● Total_Revolving_Bal : It is the balance amount that carries over from one month to the next month.
-
-● Total_Trans_Amt : It is the amount that has been transacted by the client.
-
-● Total_Trans_Vol : It is the number of times that the client has trasacted from their card.
-
-● Avg_Utilization_Ratio : It is the ratio of the amount of revolving credit and the total available credit to the client.
-
-● Use_Chip : It is to indicate what type of method the client used for their card.
-
-● Exp_Type : It is to find out the type of bills that the client used their card for.
-
-● Interest_Earned : It is the amount of interest that the company earned through the client’s card.
-
-● Delinquent_Acc : It is a binary indication that flags an account if a payment if not paid for 30 days or more.
-
-
-
-the other one is **Customer Dataset** which contains **10,108 rows** and **15 columns** and has data related to customer demographic, their occuation, geographical location, etc,. 
-
-
-
-
-
-
-Column Description :
-● Client_Num : It is the client’s transaction number.
-
-● Customer_Age : It is the client’s age.
-
-● Gender : It is the client’s gender.
-
-● Dependent_Count : It is the number of people that the client supports financially with their card.
-
-● Education_Level : It is the highest level of education that the client has received.
-
-● Marital_Status : It is the client’s marital status.
-
-● state_cd : It is the short code of the state that the client resides in.
-
-● Zipcode : It is the zip code of the place that the client resides in.
-
-● Car_Owner : It is the indication to find out if the client owns a car or not.
-
-● House_Owner : It is the indication to find out if the client owns a house or not.
-
-● Personal_loan : It is the indication to find out if the client has personal loan or not.
-
-● contact : It is the type of contact that the client has provided.
-
-● Customer_Job : It is the job that client has.
-
-● Income : It is amount that the client earns.
-
-● Cust_Satisfaction_Score : It is the indication to find out the satisfaction score that the client has provided for the service.
 
 
 
