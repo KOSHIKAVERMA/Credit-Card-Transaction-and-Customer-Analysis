@@ -5,6 +5,8 @@
 
 In this project, I uncovered key insights and behavioral patterns in credit card usage using Power BI. I analyzed crucial metrics such as customer age, sexual orientation, marital status, occupation, and education level. By the end, I gained a clearer understanding of how customers use their credit cards, enabling me to predict their needs and provide meaningful insights to the company.
 
+---
+
 ### TABLE OF CONTENTS
 
 - [Problem Statement](#problem-statement)
@@ -15,11 +17,17 @@ In this project, I uncovered key insights and behavioral patterns in credit card
 - [Insights](#insights)
 - [Conclusion](#Conclusion)
 
-  <br>
+  <br> 
+
+---
 
 ### PROBLEM STATEMENT
 
 In this project, I analyzed data from a fictional credit card company aiming to understand business performance and customer usage patterns across all **four quarters** of the **2023** financial year. The goal was to identify key trends and highlight areas requiring the most attention to optimize their operations effectively. 
+
+<br>
+
+---
 
 ### DATA COLLECTION
 
@@ -31,44 +39,31 @@ I found this dataset for this project from kaggle.com. The website has various f
 
 <br>
   
-**Column Description** :
+- **Column Description** :
 
-● **client_Num** : It is the Customer’s transaction number.
+**client_Num**: Customer’s transaction number.
 
-● **card_Category** : The type of card that the customer used.
+**card_Category**: Type of card used.
 
-● **Annual_Fees** : The fees that the customer paid for the card annually.
+**Annual_Fees**: Annual fees paid for the card.
 
-● **Activation_30_Days** : It is the binary indication of whether the customer activated their card within 30 days or not.
+**Activation_30_Days**: Binary indicator if the card was activated within 30 days.
 
-● **Customer_Acq_Cost** : The cost incurred to acquire the customer.
+**Total_Trans_Amt**: Total amount spent via card transactions.
 
-● **Week_Start_Date** : It is the date of the first day of each week of the year.
+**Total_Trans_Vol**: Number of transactions made.
 
-● **Week_Num** : It is the rolling count of the number of weeks.
+**Credit_Limit**: Credit limit assigned to the card.
 
-● **Qtr** : It indicates the quarter of the year.
+**Interest_earned**: The amount of interest the company earned from the customer’s card usage.
 
-● **current_year** : It is the operation year.
+**Week_Start_Date**: Start date of each week.
 
-● **Credit_Limit** : The credit limit assigned to the customer’s card.
+**Qtr**: Quarter of the year.
 
-● **Total_Revolving_Bal** : The outstanding balance that rolls over from one month to the next.
+**Delinquent_Acc**: Flag if a payment is overdue for 30+ days.
 
-● **Total_Trans_Amt** : Total amount spent by the customer through their card transactions.
-
-● **Total_Trans_Vol** : Total number of transactions made by the customer using their card.
-
-● **Avg_Utilization_Ratio** : The proportion of revolving credit used relative to the customer’s total available credit.
-
-● **Use_Chip** : The type of payment method the customer used with their card.
-
-● **Exp_Type** : The types of bills the customer paid using their card.
-
-● **Interest_Earned** : The amount of interest the company earned from the customer’s card usage.
-
-● **Delinquent_Acc** : A binary indicator that flags an account if a payment remains overdue for 30 days or more.
-
+**Customer_acq_cost**: The cost incurred to acquire the customer.
 
  <br> 
  <br> 
@@ -81,39 +76,33 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 <br>
 
-**Column Description** :
+- **Column Description** :
 
-● **Client_Num** : It is the customer’s transaction number.
+**Client_Num**: Customer’s transaction number.
 
-● **Customer_Age** : Customer’s age.
+**Customer_Age**: Age of the customer.
 
-● **Gender** : Customer’s gender.
+**Gender**: Customer’s gender.
 
-● **Dependent_Count** : The number of individuals financially supported by the customer through their card.
+**Customer_job**: The job that customer has.
 
-● **Education_Level** : The highest level of education that the customer has received.
+**Education_Level**: Highest level of education attained.
 
-● **Marital_Status** : Customer’s marital status.
+**Marital_Status**: Customer’s marital status.
 
-● **state_cd** : Short code of the state that the customer resides in.
+**Income**: Customer's income level.
 
-● **Zipcode** : The zip code of the place that the customer resides in.
+**Cust_Satisfaction_Score**: Satisfaction score provided by the customer.
 
-● **Car_Owner** : It indicates whether the customer owns a car or not.
+**Car_Owner**: Indicates if the customer owns a car.
 
-● **House_Owner** : It indicates whether the customer owns a house or not.
+**House_Owner**: Indicates if the customer owns a house.
 
-● **Personal_loan** : It indicates whether the customer has a personal loan or not.
-
-● **contact** : The type of contact that the customer has provided.
-
-● **Customer_Job** : The job that customer has.
-
-● **Income** : The amount of income the customer earns.
-
-● **Cust_Satisfaction_Score** : The satisfaction score provided by the Customer for the service.
+**Personal_loan**: It indicates whether the customer has a personal loan or not.
 
 <br>
+
+---
 
 ### DATA CLEANING
 
@@ -121,6 +110,9 @@ After importing the files in power BI, I initiated to check for any discripencie
 
 Then I checked for any **duplicates** or **empty values** using the **column distribution** and **column quality** features in the data preview group, but there were no duplicates and empty values in the data. 
 
+<br>
+
+---
 
 ### DATA MODELLING
 
@@ -214,6 +206,8 @@ WOW_Revenue = DIVIDE(([Current_week_Revenue] - [Previous_week_Revenue]), [Previo
 ```
 <br>
 
+---
+
 ### REPORT BUILDING
 
 I divided the visualization into two sections: one focuses on a detailed analysis of all **transactions**, and the other provides insights into the company’s **customers**.
@@ -222,21 +216,21 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
 - **KPIs**:
 
-**Revenue (57M)** – Displays the total revenue generated.
+  **Revenue (57M)** – Displays the total revenue generated.
 
-**Total Interest (8M)** – The cumulative interest earned from all customers.
+  **Total Interest (8M)** – The cumulative interest earned from all customers.
 
-**Amount (46M)** – Sum of all transaction amounts.
+  **Amount (46M)** – Sum of all transaction amounts.
 
-**Count (656K)** – Total number of transactions conducted.
-
+  **Count (656K)** – Total number of transactions conducted.
+  
 <br>
 
 - **Matrix (Card Category Breakdown)**:
 
--Provides a summary of revenue, transaction amounts, and interest earned by card type (Blue, Gold, Platinum, Silver).
+  Provides a summary of revenue, transaction amounts, and interest earned by card type (Blue, Gold, Platinum, Silver).
 
-**Insight**: The Blue card contributes the highest revenue and transaction volume.
+  **Insight**: The Blue card contributes the highest revenue and transaction volume.
 
 <br>
 
@@ -244,21 +238,21 @@ I divided the visualization into two sections: one focuses on a detailed analysi
   
 **1. Quarterly Revenue & Transaction Volume (Q1-Q4)**
 
-- **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
+  - **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
   
-- **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
-  
+    **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
+
 **2. Revenue by Expenditure Type**
 
-- Top categories include Bills, Entertainment, and Fuel.
+  - Top categories include Bills, Entertainment, and Fuel.
   
-- **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
-  
+    **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
+
 **3. Revenue by Education Level**
 
-- Graduate-level customers generate the most revenue.
+  - Graduate-level customers generate the most revenue.
   
-- **Insight**: Education level correlates with higher spending.
+    **Insight**: Education level correlates with higher spending.
   
 **4. Revenue by Customer Job**
 
@@ -279,5 +273,18 @@ The Blue card leads in revenue, reinforcing its popularity among customers.
 <br>
 
 #### CUSTOMER ANALYSIS
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
