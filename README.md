@@ -9,9 +9,9 @@ In this project, I uncovered key insights and behavioral patterns in credit card
 
 - [Problem Statement](#problem-statement)
 - [Data Collection](#data-collection)
-- [Importing Data](#importing-data)
-- [Data Analysis](#data-analysis)
-- [Dashboard Preparation](#dashboard-preparation)
+- [Data Cleaning](#data-cleaning)
+- [Data Modelling](#data-modelling)
+- [Report Building](#report-building)
 - [Insights](#insights)
 - [Conclusion](#Conclusion)
 
@@ -23,14 +23,14 @@ In this project, I analyzed data from a fictional credit card company aiming to 
 
 ### DATA COLLECTION
 
-The dataset used for this analysis is structured in CSV format and consists of two parts. The first is the **Transaction Dataset**, containing **10,108 rows** and **18 columns**, detailing all customer transactions. Here's a quick glimpse of its contents:
+I found this dataset for this project from kaggle.com. The website has various fictitious datasets for data projects. The dataset used for this analysis is structured in CSV format and consists of two parts. The first is the **Transaction Dataset**, containing **10,108 rows** and **18 columns**, detailing all customer transactions. Here's a quick glimpse of its content:
 
 <br>
 
 ![Screenshot 2024-10-14 164247](https://github.com/user-attachments/assets/667edfe3-ee42-4427-b01c-8ef4ac904e05)
 
 <br>
-
+  
 **Column Description** :
 
 ● **client_Num** : It is the Customer’s transaction number.
@@ -115,11 +115,18 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 <br>
 
-### DATA MODIFICATION
+### DATA CLEANING
 
-Before starting the analysis and visualization, I created **additional columns** and **measures** to streamline certain processes. I utilized Power BI's built-in **DAX** tool to develop these enhancements.
+After importing the files in power BI, I initiated to check for any discripencies in the data. All the **data types** were correct accept for the **date** column so, I changed it to date. 
 
-**Added Columns**
+Then I checked for any **duplicates** or **empty values** using the **column distribution** and **column quality** features in the data preview group, but there were no duplicates and empty values in the data. 
+
+
+### DATA MODELLING
+
+Before starting the analysis and visualization, I created some **additional columns** and **measures** to streamline certain processes. I utilized Power BI's built-in **DAX** tool to develop these enhancements.
+
+**a) ADDED COLUMNS**
 
 **1. Revenue**
 
@@ -169,7 +176,9 @@ Income_Group = SWITCH(
 
 <br>
 
-**Measures**
+**b) MEASURES**
+
+I developed several key measures to analyze revenue on a **weekly basis**. 
 
 **1. Current_week_revenue**
 
@@ -203,14 +212,72 @@ Week-on-week (WoW) revenue measures the **change in revenue from one week to the
 ```dax
 WOW_Revenue = DIVIDE(([Current_week_Revenue] - [Previous_week_Revenue]), [Previous_week_Revenue])
 ```
+<br>
 
+### REPORT BUILDING
 
+I divided the visualization into two sections: one focuses on a detailed analysis of all **transactions**, and the other provides insights into the company’s **customers**.
 
+#### TRANSACTION ANALYSIS
 
+- **KPIs**:
 
+**Revenue (57M)** – Displays the total revenue generated.
 
+**Total Interest (8M)** – The cumulative interest earned from all customers.
 
+**Amount (46M)** – Sum of all transaction amounts.
 
+**Count (656K)** – Total number of transactions conducted.
 
+<br>
+
+- **Matrix (Card Category Breakdown)**:
+
+-Provides a summary of revenue, transaction amounts, and interest earned by card type (Blue, Gold, Platinum, Silver).
+
+**Insight**: The Blue card contributes the highest revenue and transaction volume.
+
+<br>
+
+- **Bar and Combo Charts**:
+  
+**1. Quarterly Revenue & Transaction Volume (Q1-Q4)**
+
+- **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
+  
+- **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
+  
+**2. Revenue by Expenditure Type**
+
+- Top categories include Bills, Entertainment, and Fuel.
+  
+- **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
+  
+**3. Revenue by Education Level**
+
+- Graduate-level customers generate the most revenue.
+  
+- **Insight**: Education level correlates with higher spending.
+  
+**4. Revenue by Customer Job**
+
+- Business professionals account for the largest revenue share.
+  
+- **Insight**: Professionals are the primary revenue drivers, followed by white-collar employees.
+  
+**5. Revenue by Use Chip**
+
+- Swipe transactions generate the highest revenue, followed by chip and online transactions.
+ 
+- **Insight**: Customers primarily prefer in-person payments over online methods.
+  
+**6. Revenue by Card Category**
+
+The Blue card leads in revenue, reinforcing its popularity among customers.
+
+<br>
+
+#### CUSTOMER ANALYSIS
 
 
