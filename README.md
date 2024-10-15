@@ -1,27 +1,27 @@
 # Unlocking Insights: Credit Card Transactions and Customer Behavior Analysis
 <br>
 
-### PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
 In this project, I uncovered key insights and behavioral patterns in credit card usage using Power BI. I analyzed crucial metrics such as customer age, sexual orientation, marital status, occupation, and education level. By the end, I gained a clearer understanding of how customers use their credit cards, enabling me to predict their needs and provide meaningful insights to the company.
 
 ---
 
-### TABLE OF CONTENTS
+## TABLE OF CONTENTS
 
 - [Problem Statement](#problem-statement)
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
 - [Data Modelling](#data-modelling)
 - [Report Building](#report-building)
-- [Insights](#insights)
+- [Recommendations](#recommendation)
 - [Conclusion](#Conclusion)
 
   <br> 
 
 ---
 
-### PROBLEM STATEMENT
+## PROBLEM STATEMENT
 
 In this project, I analyzed data from a fictional credit card company aiming to understand business performance and customer usage patterns across all **four quarters** of the **2023** financial year. The goal was to identify key trends and highlight areas requiring the most attention to optimize their operations effectively. 
 
@@ -29,7 +29,7 @@ In this project, I analyzed data from a fictional credit card company aiming to 
 
 ---
 
-### DATA COLLECTION
+## DATA COLLECTION
 
 I found this dataset for this project from kaggle.com. The website has various fictitious datasets for data projects. The dataset used for this analysis is structured in CSV format and consists of two parts. The first is the **Transaction Dataset**, containing **10,108 rows** and **18 columns**, detailing all customer transactions. Here's a quick glimpse of its content:
 
@@ -104,7 +104,7 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 ---
 
-### DATA CLEANING
+## DATA CLEANING
 
 After importing the files in power BI, I initiated to check for any discripencies in the data. All the **data types** were correct accept for the **date** column so, I changed it to date. 
 
@@ -114,7 +114,7 @@ Then I checked for any **duplicates** or **empty values** using the **column dis
 
 ---
 
-### DATA MODELLING
+## DATA MODELLING
 
 Before starting the analysis and visualization, I created some **additional columns** and **measures** to streamline certain processes. I utilized Power BI's built-in **DAX** tool to develop these enhancements.
 
@@ -208,11 +208,11 @@ WOW_Revenue = DIVIDE(([Current_week_Revenue] - [Previous_week_Revenue]), [Previo
 
 ---
 
-### REPORT BUILDING
+## REPORT BUILDING
 
 I divided the visualization into two sections: one focuses on a detailed analysis of all **transactions**, and the other provides insights into the company’s **customers**.
 
-#### TRANSACTION ANALYSIS
+### TRANSACTION ANALYSIS 
 
 - **KPIs**:
 
@@ -236,43 +236,156 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
 - **Bar and Combo Charts**:
   
-**1. Quarterly Revenue & Transaction Volume (Q1-Q4)**
+  **1. Quarterly Revenue & Transaction Volume (Q1-Q4):**
 
-  - **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
+     **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
+
+     **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
+
+  **2. Revenue by Expenditure Type:**
+
+  Top categories include Bills, Entertainment, and Fuel.
   
-    **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
+     **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
 
-**2. Revenue by Expenditure Type**
+  **3. Revenue by Education Level:**
 
-  - Top categories include Bills, Entertainment, and Fuel.
+  Graduate-level customers generate the most revenue.
   
-    **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
-
-**3. Revenue by Education Level**
-
-  - Graduate-level customers generate the most revenue.
+     **Insight**: Education level correlates with higher spending.
   
-    **Insight**: Education level correlates with higher spending.
-  
-**4. Revenue by Customer Job**
+  **4. Revenue by Customer Job:**
 
-- Business professionals account for the largest revenue share.
+  Business professionals account for the largest revenue share.
   
-- **Insight**: Professionals are the primary revenue drivers, followed by white-collar employees.
+     **Insight**: Professionals are the primary revenue drivers, followed by white-collar employees.
   
-**5. Revenue by Use Chip**
+  **5. Revenue by Use Chip:**
 
-- Swipe transactions generate the highest revenue, followed by chip and online transactions.
+  Swipe transactions generate the highest revenue, followed by chip and online transactions.
  
-- **Insight**: Customers primarily prefer in-person payments over online methods.
+     **Insight**: Customers primarily prefer in-person payments over online methods.
   
-**6. Revenue by Card Category**
+  **6. Revenue by Card Category:**
 
-The Blue card leads in revenue, reinforcing its popularity among customers.
+  The Blue card leads in revenue, reinforcing its popularity among customers.
+
+  <br>
+
+- **Filters**:
+
+  **Quarter Filter (Q1-Q4)** – Allows users to view KPIs and charts for specific quarters.
+
+  **Week Start Date Filter** – Helps analyze performance for selected weeks.
+
+  **Gender Filter (F/M)** – Provides insights based on gender-specific behavior.
+
+  **Customer Segment Filter (Low, Med, High)** – Segments customers by spending levels.
+
+  **Card Type Filter (Gold, Silver, Blue, Platinum)** – Enables comparisons across different card categories.
 
 <br>
 
-#### CUSTOMER ANALYSIS
+### CUSTOMER ANALYSIS 
+
+- **KPIs**:
+  
+  **Revenue (57M)** – Total revenue generated.
+
+  **Total Interest (8M)** – Interest earned from customers.
+
+  **Income (588M)** – Total income of all customers.
+
+  **CSS (3.19)** – Customer Satisfaction Score, indicating overall customer happiness with services.
+
+<br>
+
+- **Line Chart**:
+  
+  **Revenue by Week**: Tracks weekly revenue trends, highlighting fluctuations and potential seasonality.
+
+<br>
+
+- **Bar Charts**:
+  
+   **1. Revenue by Age Group**:
+
+  Highest revenue comes from customers aged 40–50.
+  
+     **Insight**: Middle-aged customers are key contributors.
+
+   **2. Top 5 States by Revenue**:
+
+     **Insight**: Texas (TX) and California (CA) generate the most revenue, suggesting regional importance.
+  
+   **3. Revenue by Marital Status**:
+
+     **Insight**: Married individuals contribute more to revenue than single ones.
+  
+   **4. Revenue by Income**:
+
+     **Insight**: High-income customers account for the majority of revenue, followed by medium-income ones.
+  
+   **5. Revenue by Dependent Count**:
+
+     **Insight**: Customers with dependents between 1–2 generate more revenue than others.
+  
+   **6. Revenue by Education**:
+
+     **Insight**: Graduate-level customers generate the highest revenue.
+
+<br>
+
+- **Matrix Table**:
+
+   **Customer Job Summary**: Provides revenue, income, and interest data segmented by customer job types.
+
+   **Insight**: Business professionals and blue-collar workers are key revenue drivers.
+
+<br>
+
+- **Filters**:
+
+  **Quarter Filter (Q1-Q4)**: Allows analysis by quarter.
+
+  **Week Start Date Filter**: Enables week-specific insights.
+
+  **Gender Filter (M/F)**: Analyzes metrics by gender.
+
+  **Card Type Filter (Gold, Silver, Blue, Platinum)**: Compares metrics by card categories.
+
+  **Transaction Method Filter (Swipe, Online, Chip)**: Highlights revenue based on the payment method used.
+
+ <br>
+
+### OTHER USEFUL MATRIX 
+
+<br>
+
+- **Delinquent Rate by Customer Job**:
+   
+  **Explanation**: Displays delinquency rates (accounts with overdue payments) segmented by customer job types.
+
+  **Insight**: Self-employed customers have the highest delinquent rate (1.66%), while retirees show the lowest (0.61%). Business professionals and white-collar workers 
+ maintain relatively low delinquency.
+
+<br>
+
+- **Credit Card Activation Rate**:
+
+  **Explanation**: Shows the percentage of customers who activated their cards within 30 days of issuance.
+
+  **Insight**: 57.46% of customers activated their cards within 30 days, indicating strong early engagement.
+
+<br>
+
+- **Average Customer Acquisition Cost and Revenue by Card Category**:
+
+  **Explanation**: Compares the average acquisition cost and revenue per card type (Blue, Gold, Platinum, Silver).
+
+  **Insight**: Platinum cards generate the highest average revenue (16,949), but their acquisition cost is also slightly higher than others. Blue cards are the most cost-effective to acquire but generate the lowest revenue.
+
+
 
 
 
