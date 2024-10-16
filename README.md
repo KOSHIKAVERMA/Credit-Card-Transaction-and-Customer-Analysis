@@ -106,7 +106,7 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 ## DATA CLEANING
 
-After importing the files in power BI, I initiated to check for any discripencies in the data. All the **data types** were correct accept for the **date** column so, I changed it to date. 
+After importing the files in power BI, I initiated to check for any discrepancies in the data. All the **data types** were correct accept for the **date** column so, I changed it to date. 
 
 Then I checked for any **duplicates** or **empty values** using the **column distribution** and **column quality** features in the data preview group, but there were no duplicates and empty values in the data. 
 
@@ -238,37 +238,37 @@ I divided the visualization into two sections: one focuses on a detailed analysi
   
   **1. Quarterly Revenue & Transaction Volume (Q1-Q4):**
 
-     **Combo Chart**: Shows both the sum of revenue (bars) and total transaction volume (line) per quarter.
+     **Combo Chart**: Shows both the Revenue (bars) and total transaction volume (line) per quarter.
 
-     **Insight**: Revenue peaks in Q4, with a slight drop in transaction volume towards the end.
+     **Insight**: Revenue peaked in Q4 (14.5M), with a slight drop in transaction volume towards the end.
 
   **2. Revenue by Expenditure Type:**
 
   Top categories include Bills, Entertainment, and Fuel.
   
-     **Insight**: Bills contribute the highest revenue, indicating regular usage for utilities and essentials.
+     **Insight**: Bills contributed the highest revenue (14M), indicating regular usage for utilities and essentials.
 
   **3. Revenue by Education Level:**
 
-  Graduate-level customers generate the most revenue.
+  Graduate-level customers generated the most revenue (23M).
   
-     **Insight**: Education level correlates with higher spending.
+     **Insight**: Higher education level doesn't correlate with higher spending.
   
   **4. Revenue by Customer Job:**
 
-  Business professionals account for the largest revenue share.
+  Business professionals accounted for the largest revenue share (18M).
   
      **Insight**: Professionals are the primary revenue drivers, followed by white-collar employees.
   
   **5. Revenue by Use Chip:**
 
-  Swipe transactions generate the highest revenue, followed by chip and online transactions.
+  Swipe transactions generated the highest revenue (36M), followed by chip and online transactions.
  
      **Insight**: Customers primarily prefer in-person payments over online methods.
   
   **6. Revenue by Card Category:**
 
-  The Blue card leads in revenue, reinforcing its popularity among customers.
+  The Blue card leads in revenue (47M), reinforcing its popularity among customers.
 
   <br>
 
