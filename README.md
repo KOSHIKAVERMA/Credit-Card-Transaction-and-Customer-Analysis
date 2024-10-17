@@ -39,7 +39,7 @@ I found this dataset for this project from kaggle.com. The website has various f
 
 <br>
   
-- **Column Description** :
+**Column Description** :
 
 **client_Num**: Customer’s transaction number.
 
@@ -76,7 +76,7 @@ The second dataset, the **Customer Dataset**, consists of **10,108 rows** and **
 
 <br>
 
-- **Column Description** :
+**Column Description** :
 
 **Client_Num**: Customer’s transaction number.
 
@@ -212,7 +212,9 @@ WOW_Revenue = DIVIDE(([Current_week_Revenue] - [Previous_week_Revenue]), [Previo
 
 I divided the visualization into two sections: one focuses on a detailed analysis of all **transactions**, and the other provides insights into the company’s **customers**.
 
-### TRANSACTION ANALYSIS 
+### TRANSACTION REPORT 
+
+The report offers a comprehensive view of **revenue performance** across quarters, transaction methods, customer demographics, and card types.
 
 - **KPIs**:
 
@@ -274,7 +276,7 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
 - **Filters**:
 
-  **Quarter Filter (Q1-Q4)** – Allows users to view KPIs and charts for specific quarters.
+  **Quarter Filter (Q1-Q4)** – Allows to view KPIs and charts for specific quarters.
 
   **Week Start Date Filter** – Helps analyze performance for selected weeks.
 
@@ -284,9 +286,18 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
   **Card Type Filter (Gold, Silver, Blue, Platinum)** – Enables comparisons across different card categories.
 
+picture link
+
+
+
+
+
+
 <br>
 
-### CUSTOMER ANALYSIS 
+### CUSTOMER REPORT
+
+This report offers deep insights into customer behavior across demographics, regions, and payment methods. The whole report is filtered by **Gender**.
 
 - **KPIs**:
   
@@ -316,7 +327,7 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
    **2. Top 5 States by Revenue**:
 
-     **Insight**: Texas (TX) and California (CA) generate the most revenue, suggesting regional importance.
+     **Insight**: Texas (TX), New York (NY) and California (CA) generate the most revenue, suggesting regional importance.
   
    **3. Revenue by Marital Status**:
 
@@ -328,7 +339,7 @@ I divided the visualization into two sections: one focuses on a detailed analysi
   
    **5. Revenue by Dependent Count**:
 
-     **Insight**: Customers with dependents between 1–2 generate more revenue than others.
+     **Insight**: Customers with dependents between 2–3 generate more revenue than others. This suggests that customers with more dependents (up to 3) are likely responsible for higher credit card spending, perhaps due to higher financial responsibilities.
   
    **6. Revenue by Education**:
 
@@ -356,9 +367,13 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
   **Transaction Method Filter (Swipe, Online, Chip)**: Highlights revenue based on the payment method used.
 
+Picture link
+
  <br>
 
-### OTHER USEFUL MATRIX 
+### OTHER USEFUL MATRICES
+
+The report displays important matrices related to Delinquent Rate, Credit Card Activation Rate, Customer Acquisition Cost.
 
 <br>
 
@@ -385,14 +400,33 @@ I divided the visualization into two sections: one focuses on a detailed analysi
 
   **Insight**: Platinum cards generate the highest average revenue (16,949), but their acquisition cost is also slightly higher than others. Blue cards are the most cost-effective to acquire but generate the lowest revenue.
 
+<br>
 
+---
 
+## RECOMMENDATIONS
 
+- **Optimize Blue and Silver Card Offerings**: Since these cards generate the most revenue, focusing on enhancing the rewards programs can retain high-usage customers.
+  
+- **Payment methods**: Focus on maintaining and improving swipe transaction experiences. However, as digital payment methods (chip and online) are growing, it’s still beneficial to offer incentives or enhancements in those areas to cater to evolving customer preferences while maintaining a strong swipe infrastructure.
 
+- **Increase Focus on Middle-Aged Customers**: Customers aged 40-50 contribute the highest revenue, so targeting this group with tailored financial products or loyalty programs can boost engagement.
+  
+- **Boost Female Customer Participation**: While male customers generate slightly more revenue, focusing on expanding female engagement could increase overall revenue, especially in high-income segments.
 
+- **Address High Delinquency in Self-Employed**: Provide better financial education, flexible payment options, or incentives to self-employed customers to reduce delinquency rates.
 
+- **Enhance Card Activation Rates**: Since the activation rate is just above 57%, offering promotions or reminders could increase activation within the first 30 days, improving early engagement.
 
+<br>
 
+---
+
+## CONCLUSION
+
+This project successfully analyzed credit card transactions and customer behavior, revealing key trends and insights. The **Blue and Silver cards** dominate transactions, contributing significantly to revenue, while **male customers** in high-income groups drive higher spending. The report highlighted regional contributions, with **TX, NY, and CA** leading the revenue share. Additionally, middle-aged customers were identified as major contributors, and there is potential to improve **card activation rates** and reduce **delinquency rates**. These insights and recommendations can guide strategic decisions to optimize product offerings, target key customer segments, and boost overall performance.
+
+This project illustrates how **Power BI's data visualizations and DAX measures** can be leveraged to extract meaningful business insights effectively.
 
 
 
