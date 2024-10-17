@@ -286,11 +286,9 @@ The report offers a comprehensive view of **revenue performance** across quarter
 
   **Card Type Filter (Gold, Silver, Blue, Platinum)** – Enables comparisons across different card categories.
 
-picture link
-
-
-
-
+<br>
+  
+![Screenshot 2024-10-17 221822](https://github.com/user-attachments/assets/4b390aa3-c6c5-4701-8ba4-63d14867c3df)
 
 
 <br>
@@ -367,15 +365,16 @@ This report offers deep insights into customer behavior across demographics, reg
 
   **Transaction Method Filter (Swipe, Online, Chip)**: Highlights revenue based on the payment method used.
 
-Picture link
+<br>
+
+  ![Screenshot 2024-10-17 222124](https://github.com/user-attachments/assets/983bc472-3d12-4411-b6dc-cde9b909b76d)
 
  <br>
 
-### OTHER USEFUL MATRICES
+### OTHER IMPORTANT MATRICES
 
 The report displays important matrices related to Delinquent Rate, Credit Card Activation Rate, Customer Acquisition Cost.
 
-<br>
 
 - **Delinquent Rate by Customer Job**:
    
@@ -392,6 +391,7 @@ The report displays important matrices related to Delinquent Rate, Credit Card A
 
   **Insight**: 57.46% of customers activated their cards within 30 days, indicating strong early engagement.
 
+
 <br>
 
 - **Average Customer Acquisition Cost and Revenue by Card Category**:
@@ -399,6 +399,11 @@ The report displays important matrices related to Delinquent Rate, Credit Card A
   **Explanation**: Compares the average acquisition cost and revenue per card type (Blue, Gold, Platinum, Silver).
 
   **Insight**: Platinum cards generate the highest average revenue (16,949), but their acquisition cost is also slightly higher than others. Blue cards are the most cost-effective to acquire but generate the lowest revenue.
+
+<br>
+
+![Screenshot 2024-10-17 222145](https://github.com/user-attachments/assets/e8e5d924-ebde-4bbc-adbf-2ebfcf244b41)
+
 
 <br>
 
