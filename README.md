@@ -406,9 +406,13 @@ The report displays important matrices related to Delinquent Rate, Credit Card A
 
 ![Screenshot 2024-10-17 222145](https://github.com/user-attachments/assets/e8e5d924-ebde-4bbc-adbf-2ebfcf244b41)
 
-
 <br>
 
+### Note:
+
+All these visualisations and their insights are generated after I added an additional week's data (31st Dec,2023 - 06th Jan,2024) using Power BI's append queries feature and then refreshing the dashboards. This demonstrated Power BI's ability to dynamically adjust insights and metrics in real-time, ensuring that the analysis remains up-to-date with the most current data. 
+
+ 
 ---
 
 ## RECOMMENDATIONS
