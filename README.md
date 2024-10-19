@@ -23,7 +23,7 @@ In this project, I uncovered key insights and behavioral patterns in credit card
 
 ## PROBLEM STATEMENT
 
-In this project, I analyzed data from a fictional credit card company aiming to understand business performance and customer usage patterns across all **four quarters** of the **2023** financial year. The goal was to identify key trends and highlight areas requiring the most attention to optimize their operations effectively. 
+In this project, I analyzed data from a fictional credit card company aiming to understand business performance and customer usage patterns across all **four quarters** of the financial year **2023 (1st Jan - 30th Dec)**. The goal was to identify key trends and highlight areas requiring the most attention to optimize their operations effectively. 
 
 <br>
 
@@ -410,7 +410,7 @@ The report displays important matrices related to Delinquent Rate, Credit Card A
 
 ### Note:
 
-All these visualisations and their insights are generated after I added an additional week's data (31st Dec,2023 - 06th Jan,2024) using Power BI's append queries feature and then refreshing the dashboards. This demonstrated Power BI's ability to dynamically adjust insights and metrics in real-time, ensuring that the analysis remains up-to-date with the most current data. 
+All these visualisations and their insights were generated after I added an additional week's data **(31st Dec,2023 - 06th Jan,2024)** using Power BI's append queries feature and then **refreshed** the dashboards. This demonstrates Power BI's ability to dynamically adjust insights and metrics in real-time, ensuring that the analysis remains up-to-date with the most current data. 
 
  
 ---
