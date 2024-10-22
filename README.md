@@ -31,7 +31,7 @@ In this project, I analyzed data from a fictional credit card company aiming to 
 
 ## DATA COLLECTION
 
-I found this dataset for this project from kaggle.com. The website has various fictitious datasets for data projects. The dataset used for this analysis is structured in CSV format and consists of two parts. 
+I found this dataset for this project on kaggle.com. The website has various fictitious datasets for data projects. The dataset used for this analysis is structured in CSV format and consists of two parts. 
 
 The first is the **Transaction Dataset**, containing **10,108 rows** and **18 columns**, detailing all customer transactions. Here's a quick glimpse of its content:
 
